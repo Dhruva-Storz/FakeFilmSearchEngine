@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ── EditPage responsive helpers ─────────────────────────────────────────── */
+
+.edit-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 24px 80px;
+}
+
+.edit-header-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.edit-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.edit-steps-abc {
+  display: flex;
+  gap: 0;
+  margin-bottom: 20px;
+}
+
+.edit-steps-abc > div {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding-right: 12px;
+}
+
+.edit-adv-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .edit-content {
+    padding: 20px 16px 60px;
+  }
+
+  .edit-header-inner {
+    padding: 12px 16px;
+    gap: 10px;
+  }
+
+  .edit-header-inner .edit-header-title {
+    display: none; /* subtitle hidden on small screens */
+  }
+
+  .edit-two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .edit-steps-abc {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .edit-steps-abc > div {
+    padding-right: 0;
+  }
+
+  .edit-adv-row {
+    flex-direction: column;
+  }
+}
