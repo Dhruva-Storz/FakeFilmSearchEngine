@@ -297,7 +297,7 @@ export default function EditPage({ config, setConfig }: Props) {
 
           {/* Prompt box */}
           <div style={{ position: 'relative', marginBottom: 20 }}>
-            <div style={{ padding: '14px 16px', background: C.inputBg, border: `1px solid ${C.border}`, borderRadius: 8, maxHeight: 160, overflowY: 'auto', fontSize: 12, color: C.muted, lineHeight: 1.6, whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
+            <div style={{ padding: '14px 16px', background: C.inputBg, border: `1px solid ${C.border}`, borderRadius: 8, maxHeight: 160, overflowY: 'auto', overflowX: 'hidden', fontSize: 12, color: C.muted, lineHeight: 1.6, whiteSpace: 'pre-wrap', wordBreak: 'break-word', overflowWrap: 'break-word' }}>
               {buildPrompt(config.engineName, config.tagline)}
             </div>
             <button

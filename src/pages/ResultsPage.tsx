@@ -65,13 +65,13 @@ export default function ResultsPage({ config }: Props) {
 
           {/* Search bar */}
           <div className="flex-1 min-w-0 max-w-xl">
-            <div className="flex items-center border border-gray-300 rounded-full px-4 py-2 hover:shadow-md focus-within:shadow-md transition-shadow bg-white">
+            <div className="flex items-center border border-gray-300 rounded-full px-4 py-2 hover:shadow-md focus-within:shadow-md transition-shadow bg-white min-w-0">
               <input
                 type="text"
                 value={query}
                 onChange={e => setQuery(e.target.value)}
                 onKeyDown={handleKeyDown}
-                className="flex-1 text-sm outline-none text-gray-800 bg-transparent"
+                className="flex-1 min-w-0 text-sm outline-none text-gray-800 bg-transparent"
                 autoComplete="off"
                 spellCheck={false}
               />
